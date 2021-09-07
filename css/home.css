@@ -2,7 +2,7 @@
     width: 100%;
     background-color: rgb(167, 167, 167);
     overflow: auto;
-    border-radius: 25px;
+    border-radius: 20px;
 }
 
 .navbar a {
@@ -13,7 +13,7 @@
     font-size: 20px;
     width: 20%;
     text-align: center;
-    border-radius: 25px;
+    border-radius: 20px;
 }
 
 .navbar a:hover {
@@ -24,19 +24,45 @@
     background-color: rgb(57, 218, 79);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
     .navbar a {
         float: none;
         display: block;
-        width: 100%;
+        width: 98%;
         text-align: left;
+        padding-left: 2%;
     }
+}
+
+.tradhrs {
+    width: 250px;
+    margin-left: 20px;
 }
 
 .day {
     text-align: left;
+    border: 5px white;
+    border-collapse: collapse;
+    width: 65%;
 }
 
 .hr {
     text-align: right;
+    border: 5px white;
+    border-collapse: collapse;
+    width: 35%;
+}
+
+.hrcap {
+    height: 30px;
+    vertical-align: bottom;
+}
+
+.shad {
+    text-shadow: 3px, 0px, 5px, red;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 20px;
 }
