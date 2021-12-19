@@ -1,13 +1,70 @@
+/* document */
 :root {
     --header-height: 100px;
+    --col1: #F4F6F6;
+    --green1: #436B1F;
 }
 
-#id {
+
+
+/* body */
+* {
+    background-color: var(--col1);
+}
+
+
+
+/* header */
+header {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 10px;
+}
+#name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#name h1::after {
+    content: " Pine Products";
+}
+#logo {
+    width: 85px;
+    height: auto;
+}
+nav{
+    min-width: 300px;
+    width: 40%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+/* hero */
+#hero {
     height: calc(100vh - var(--header-height));
+    max-width: 800px;
+    margin: auto;
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30%;
+    padding-bottom: 60%;
+    justify-content: space-around;
 }
 
+
+
+/* media queries */
 @media screen and (max-width:500px) {
     nav {
+        display: none;
+    }
+    #name h1::after{
         display: none;
     }
 }
