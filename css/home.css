@@ -1,83 +1,13 @@
-.navbar {
-    width: 100%;
-    background-color: #F5F5F5;
-    overflow: auto;
-    border-radius: 6px;
+:root {
+    --header-height: 100px;
 }
 
-.navbar a {
-    float: left;
-    padding: 10px 0px 10px 0px;
-    color: black;
-    text-decoration: none;
-    font-size: 20px;
-    width: 20%;
-    text-align: center;
-    border-radius: 6px;
+#id {
+    height: calc(100vh - var(--header-height));
 }
 
-@media screen and (max-width: 800px) {
-    .navbar a {
-        float: left;
-        padding: 10px 0px 10px 0px;
-        color: black;
-        text-decoration: none;
-        font-size: 20px;
-        width: 20%;
-        text-align: center;
-        border-radius: 6px;
+@media screen and (max-width:500px) {
+    nav {
+        display: none;
     }
-}
-
-.navbar a:hover {
-    background-color: #ADD69A;
-    color: black;
-}
-
-.active {
-    background-color: #ADD69A;
-    color: black;
-}
-
-@media screen and (max-width: 500px) {
-    .navbar a {
-        float: none;
-        display: block;
-        width: 98%;
-        text-align: left;
-        padding-left: 2%;
-    }
-}
-
-.tradhrs {
-    width: 250px;
-    margin-left: 20px;
-}
-
-.day {
-    text-align: left;
-    border: 5px white;
-    border-collapse: collapse;
-    width: 65%;
-}
-
-.hr {
-    text-align: right;
-    border: 5px white;
-    border-collapse: collapse;
-    width: 35%;
-}
-
-.hrcap {
-    height: 30px;
-    vertical-align: bottom;
-}
-
-.shad {
-    text-shadow: 3px, 0px, 5px, red;
-}
-
-body {
-    font-family: 'Raleway', sans-serif;
-    margin: 20px;
 }
