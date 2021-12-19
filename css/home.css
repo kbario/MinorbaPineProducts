@@ -2,7 +2,8 @@
 :root {
     --header-height: 100px;
     --col1: #F4F6F6;
-    --green1: #436B1F;
+    --green-dark: #436B1F;
+    --green-faint: #B4DA95;
 }
 
 
@@ -10,6 +11,7 @@
 /* body */
 * {
     background-color: var(--col1);
+    transition: all 0.5s ease;
 }
 
 
@@ -33,6 +35,10 @@ header {
 #logo {
     width: 85px;
     height: auto;
+    border-radius: 300px;
+}
+#logo:hover{
+    background-color: var(--green-faint);
 }
 nav{
     min-width: 300px;
