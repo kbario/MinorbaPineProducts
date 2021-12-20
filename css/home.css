@@ -39,13 +39,31 @@ header {
 }
 #logo:hover{
     background-color: var(--green-faint);
+    cursor: pointer;
 }
 nav{
-    min-width: 300px;
+    min-width: 310px;
     width: 40%;
     max-width: 500px;
     display: flex;
     justify-content: space-around;
+}
+nav a {
+    padding: 7px 15px;
+    border-radius: 2px;
+    font-size: 20px;
+    transform-style: preserve-3d;
+}
+nav a .front {
+    transform: translateZ(20px);
+    background-color: var(--green-faint);
+}
+nav a .top {
+    transform: rotateX(-90deg) translateZ(20px);
+    background-color: var(--green-faint);
+}
+nav a:hover {
+    transform: rotate3d(1,0,0,90deg)
 }
 
 
@@ -56,11 +74,6 @@ nav{
     max-width: 800px;
     margin: auto;
     padding: 0 25px;
-    display: flex;
-    flex-direction: column;
-    padding-top: 30%;
-    padding-bottom: 60%;
-    justify-content: space-around;
 }
 
 
